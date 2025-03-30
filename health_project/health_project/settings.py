@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-my_dq)a(pz@@u)sy7o4_-kgs2p87+ctmre-hk04#=+sx+h3ves
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['optimacare.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -51,7 +51,9 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware'
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
 ]
 
 ROOT_URLCONF = 'health_project.urls'
