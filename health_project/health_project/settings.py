@@ -45,16 +45,14 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # ← this is for static files
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # ✅ This is where whitenoise should go
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',  # ← this should NOT be merged
-
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
 
 ]

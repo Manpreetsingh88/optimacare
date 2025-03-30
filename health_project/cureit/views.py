@@ -12,7 +12,7 @@ def index(request):
     return render(request, 'index.html')
 
 # Replace this with your actual OpenRouter API key
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = "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"
 
 
 
